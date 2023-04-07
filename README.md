@@ -14,6 +14,19 @@ The USGS is interested in building a new set of tools that will allow them to vi
 ```python
 d3.json(queryUrl).then(function (data) {    createFeatures(data.features);});
 
+// Define the createFeatures function to create map layers based on the earthquake data
+function createFeatures(earthquakeData) {
+  // Use Leaflet to create a GeoJSON layer for the earthquakes
+  var earthquakes = L.geoJSON(earthquakeData, {
+    // Call the createPopup function to create a popup for each earthquake
+    onEachFeature: createPopup,
+    // Call the createMarker function to create a marker for each earthquake
+    pointToLayer: createMarker,
+  });
+
+  // Call the createMap function to create the map and add the earthquake layer to it
+  createMap(earthquakes);
+}
 ```
 ### Step 2: Import and visualize the data by doing the following
 
