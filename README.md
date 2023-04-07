@@ -45,4 +45,3 @@ Using Leaflet, create a map that plots all the earthquakes from your dataset bas
 ![Legend](legend.PNG)
    
 
-![Full Map](map.PNG)
