@@ -29,5 +29,10 @@ Using Leaflet, create a map that plots all the earthquakes from your dataset bas
 
 * Create a legend that will provide context for your map data.
 
+<<<<<<< HEAD
 ![Legend](legend.PNG)
    
+=======
+
+   ![Full Map](map.PNG)
+>>>>>>> 1a0acb72c65e1241a9382ebaa45e7d915fe80da6
